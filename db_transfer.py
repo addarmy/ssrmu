@@ -23,8 +23,6 @@ db_instance = None
 class DbTransfer(object):
 
     def __init__(self):
-        reload(sys)
-        sys.setdefaultencoding('utf-8')
         import threading
         self.last_update_transfer = {}
         self.event = threading.Event()
@@ -517,6 +515,8 @@ class DbTransfer(object):
         self.mu_port_list = []
 
         for row in rows:
+            #端口偏移
+            row['port'] = row['port']+get_config().OFFSET
             if row['is_multi_user'] != 0:
                 self.mu_port_list.append(int(row['port']))
                 continue
