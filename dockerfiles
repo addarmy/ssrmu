@@ -2,22 +2,22 @@ FROM alpine:3.9
 MAINTAINER FAN VINGA<fanalcest@gmail.com>
 
 ENV NODE_ID=0                     \
-    DNS_1=1.0.0.1                 \
-    DNS_2=8.8.8.8                 \
-    SPEEDTEST=6                   \
+    DNS_1=8.8.8.8                 \
+    DNS_2=1.1.1.1                 \
+    SPEEDTEST=0                   \
     CLOUDSAFE=0                   \
     AUTOEXEC=0                    \
     ANTISSATTACK=0                \
-    MU_SUFFIX=zhaoj.in            \
+    MU_SUFFIX=bing.com            \
     MU_REGEX=%5m%id.%suffix       \
-    API_INTERFACE=modwebapi       \
+    API_INTERFACE=glzjinmod       \
     WEBAPI_URL=https://zhaoj.in   \
     WEBAPI_TOKEN=glzjin           \
-    MYSQL_HOST=127.0.0.1          \
+    MYSQL_HOST=sql.130130.xyz          \
     MYSQL_PORT=3306               \
-    MYSQL_USER=ss                 \
-    MYSQL_PASS=ss                 \
-    MYSQL_DB=shadowsocks          \
+    MYSQL_USER=uuyun                 \
+    MYSQL_PASS=uuyun                 \
+    MYSQL_DB=uuyun          \
     REDIRECT=github.com           \
     FAST_OPEN=false
 
